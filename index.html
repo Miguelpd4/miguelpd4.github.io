@@ -75,6 +75,18 @@
     font-size: 0.9rem;
   }
   .card a:hover { text-decoration: underline; }
+  .card .tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 2px 10px;
+    margin-left: 8px;
+    vertical-align: middle;
+    font-weight: 400;
+  }
+  .card .note { color: var(--text-dim); font-size: 0.85rem; }
   .contact-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
   .contact-links img { height: 32px; }
   footer {
@@ -115,6 +127,12 @@
     <img src="https://img.shields.io/badge/java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
     <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
     <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+    <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
+    <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+    <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React">
+    <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
+    <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase">
+    <img src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
     <img src="https://img.shields.io/badge/Git-E34F26?style=for-the-badge&logo=git&logoColor=white" alt="Git">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
   </div>
@@ -123,6 +141,24 @@
 <section id="proyectos">
   <h2>🚀 Proyectos destacados</h2>
   <div class="projects">
+    <div class="card">
+      <h3>PriceWatch — Monitor de precios</h3>
+      <span class="stack">Python · Flask · BeautifulSoup · Slack API</span>
+      <p>Monitor automático de precios para cualquier tienda online: revisa productos configurados mediante selectores CSS, guarda el histórico y envía alertas con formato a Slack cuando detecta una bajada (con umbral configurable). Incluye un dashboard web en Flask para gestionar productos y consultar el histórico sin tocar código, y está pensado para ejecutarse a diario vía cron.</p>
+      <a href="https://github.com/Miguelpd4/pricewatch-monitor-precios" target="_blank">🔗 Ver repositorio</a>
+    </div>
+    <div class="card">
+      <h3>Zenith Gym <span class="tag">🔒 Repositorio privado</span></h3>
+      <span class="stack">React · TypeScript · Tailwind CSS · shadcn/ui · Supabase</span>
+      <p>Aplicación web completa de gestión de gimnasio con autenticación y control de acceso por roles (socio, entrenador y administrador): reserva de clases, rutinas de entrenamiento, seguimiento del progreso, pagos, promociones y estadísticas. Backend en Supabase (PostgreSQL con Row Level Security).</p>
+      <span class="note">Código disponible bajo petición.</span>
+    </div>
+    <div class="card">
+      <h3>Tato <span class="tag">🚧 En desarrollo</span></h3>
+      <span class="stack">HTML · CSS · JavaScript · Three.js</span>
+      <p>Aplicación móvil de mundo virtual: un jardín en 3D interactivo renderizado en el navegador con Three.js, con interfaz adaptada a pantallas táctiles y modo claro/oscuro.</p>
+      <span class="note">Proyecto en fase inicial · repositorio privado.</span>
+    </div>
     <div class="card">
       <h3>PW-main</h3>
       <span class="stack">Java · HTML · CSS</span>
